@@ -1,0 +1,140 @@
+/* for the pen */
+@font-face {
+    font-family: 'Henshin';
+    src: url('../fonts/HANBAI.ttf');
+  }
+
+body {
+    margin: 0;
+    min-height: 110%;
+    background-color: #001331;
+    font-family: 'Henshin';
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size:47px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    /* line-height: 28px; */
+}
+
+.navbar{
+    font-family: 'Ariel';
+}
+
+.black{
+  /* background: rgba(0,0,0, 0.2); */
+  height: 100vh;
+}
+
+.container{
+    min-width: 90%;
+    margin: 0 auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 19, 49);
+    background-color: rgba(0, 19, 49, 0.95);
+    overflow-x: hidden;
+    transition: 2s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+#background-video {
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a{
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        overflow-y: unset;
+    }
+
+    .top-marker{
+        display: none;
+    }
+
+    .black{
+        height: 100%;
+    }
+
+    .navbar-nav li a{
+      margin: 0 30px 10px -30px
+  }
+
+  .navbar-collapse{
+    background: #000
+  }
+
+  .navbar-brand{
+    font-size: 25px
+  }
+
+  #background-video {
+    height: 100%;
+}
+
+  }
