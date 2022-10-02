@@ -37,6 +37,10 @@ p{
   height: 100vh;
 }
 
+.twitter{
+  display: none;
+}
+
 .container{
     min-width: 90%;
     margin: 0 auto;
@@ -228,6 +232,9 @@ p{
     position: absolute; left: 310px !important; top:50px !important;
   }
   
+  .twitter{
+    display: block;
+  }
 
   #background-video {
     height: 100%;
