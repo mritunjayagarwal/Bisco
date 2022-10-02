@@ -128,6 +128,10 @@ p{
   position: relative; margin-left: -140px;height: 200px;
 }
 
+.btnf{
+  display: none;
+}
+
 @media only screen and (min-width: 1200px) {
   h1{
     font-size: 50px;
@@ -205,15 +209,23 @@ p{
   }
 
   .bottom-frames{
-    height: 550px;
+    height: 450px;
+  }
+
+  .btnf{
+    display: block;
+  }
+
+  .splashf{
+    display: none;
   }
 
   .img-1{
-    position: absolute; left: 140px !important;top: 300px !important;
+    position: absolute; left: 160px !important;top: 150px !important;
   }
   
   .img-2{
-    position: absolute; left: 290px !important; top: 220px !important;
+    position: absolute; left: 310px !important; top:80px !important;
   }
   
 
