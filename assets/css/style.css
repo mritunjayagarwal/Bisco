@@ -23,12 +23,13 @@ h1{
 
 p{
     font-size: 20px;
-    font-family: 'Montserrat';
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
     /* line-height: 28px; */
 }
 
 .navbar{
-    font-family: 'Ariel';
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .black{
@@ -95,6 +96,14 @@ p{
     z-index: 2;
 }
 
+.img-1{
+  position: absolute; left: 500px;top: 40px;
+}
+
+.img-2{
+  position: absolute; left: 680px; top: 0px;
+}
+
 .navbar-brand {
     font-size: 30px;
     letter-spacing: 5px;
@@ -111,15 +120,23 @@ p{
   position: absolute; bottom: 0; right: 0; width: 400px; height: auto;
 }
 
+.bisco-temp{
+  display: none;
+}
+
+.bottom-frames{
+  position: relative; margin-left: -140px;height: 200px;
+}
+
 @media only screen and (min-width: 1200px) {
   h1{
     font-size: 50px;
-    margin: 25px 0;
+    /* margin: 25px 0; */
   }
 
   p{
-    font-size: 22px;
-    margin: 20px 0;
+    font-size: 20px;
+    /* margin: 20px 0; */
   }
 }
 
@@ -162,12 +179,21 @@ p{
         display: none;
     }
 
+    .bisco-pic{
+      display: none;
+    }
+
+    .bisco-temp{
+      display: block;
+      margin-bottom: -100px;
+    }
+
     .black{
         height: 100%;
     }
 
     .navbar-nav li a{
-      margin: 0 30px 10px -30px
+      margin: 10px 10px;
   }
 
   .navbar-collapse{
@@ -177,6 +203,20 @@ p{
   .navbar-brand{
     font-size: 25px
   }
+
+  .bottom-frames{
+    height: 550px;
+  }
+
+  .img-1{
+    position: absolute; left: 140px !important;top: 300px !important;
+    z-index: 3;
+  }
+  
+  .img-2{
+    position: absolute; left: 290px !important; top: 220px !important;
+  }
+  
 
   #background-video {
     height: 100%;
